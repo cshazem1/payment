@@ -21,11 +21,12 @@ class StripeService {
 
     ));
 
-    Future displayPaymentSheet()async{
-      Stripe.instance.presentPaymentSheet();
-    }
 
 
+
+  }
+  Future displayPaymentSheet()async{
+    Stripe.instance.presentPaymentSheet();
   }
   Future makePayment(PaymentIntentInputModel input)async{
     var paymentIntentModel = await createPaymentIntent(input);
