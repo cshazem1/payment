@@ -42,6 +42,7 @@ dependencies:
   dartz: ^0.10.1
   flutter_bloc: ^8.1.6
   pretty_dio_logger: ^1.4.0
+  flutter_paypal_payment: ^1.0.8
 dev_dependencies:
   flutter_test:
     sdk: flutter
