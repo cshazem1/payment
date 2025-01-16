@@ -47,8 +47,8 @@ ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(state.error)))
           Navigator.of(context).push(MaterialPageRoute(
             builder: (BuildContext context) => PaypalCheckoutView(
               sandboxMode: true,
-              clientId: "YOUR CLIENT ID",
-              secretKey: "YOUR SECRET KEY",
+              clientId: ApiKeys.paypalClientId,
+              secretKey: ApiKeys.paypalSecretKey,
               transactions: const [
                 {
                   "amount": {
